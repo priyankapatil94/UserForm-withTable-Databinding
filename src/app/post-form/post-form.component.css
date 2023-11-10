@@ -1,0 +1,13 @@
+.form-area .preview-area {
+  margin-top: 50px;
+  margin-right: 50px;
+  margin-left: 100px;
+  text-align: center;
+}
+.add-background {
+  background-color: rgb(224, 156, 9);
+  padding: 10px;
+}
+.pdata {
+  color: red;
+}

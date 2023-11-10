@@ -1,0 +1,58 @@
+<h1 [class.text-red]="bool">Angular App</h1>
+<!-- <p>{{ message1 }}</p>
+
+<!-- Property Binding -->
+
+<img [src]="imageUrl" alt="" />
+<h1 [style.color]="bool ? 'red' : 'yellow'">
+  Style Binding
+  <h1>
+    <!-- class binding -->
+
+    <!-- Event Binding -->
+
+    <button (click)="buttonClick()">Click Me</button>
+
+    <!-- event filtering -->
+    <input typr="text" (keyup.enter)="onKeyUp($event)" />
+
+    <!-- template veriable -->
+    <input type="text" (keyup.enter)="onkeyUpMain(username.value)" #username />
+    <!-- Two way databinding -->
+    <input
+      type="text"
+      [(ngModel)]="userNameData"
+      (keyup.enter)="onkeypBinding()"
+    />
+    <!-- one way Data binding  -->
+
+    <input type="text" [value]="textvalue" (keyup.enter)="keychange()" />
+    <br />
+    <input type="text" [(ngModel)]="textvalue" (keyup.enter)="keychange()" />
+    <!-- All one way data binding -->
+    <!-- string Interpolution - {{title}}
+      Property Binding -[src], [value]
+      class binding -[class.text-red]
+      style binding [style.backgroundColor]
+-->
+    <!-- All Two way data binding
+  Two-way data binding - [(ngModel)]
+  
+  -->
+
+    <!-- <p>{{ fromChildOutput }}</p>
+<p>{{ childParentComponentData }}</p>
+<app-navbar [appmsg]="AppcomponentData"></app-navbar>
+<app-post
+  [appmsgg]="appdata"
+  (notifyMeObject)="recivedMessage($event)"
+></app-post>
+
+<app-child-parent-output
+  (eventMessage)="recivedDataFromChildparent($event)"
+></app-child-parent-output> -->
+  </h1>
+</h1>
+
+<app-post-form></app-post-form>
+<app-userdetails></app-userdetails>

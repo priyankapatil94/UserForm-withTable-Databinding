@@ -1,0 +1,57 @@
+<h1>Post Form</h1>
+<button (click)="addNew()">Add New date</button>
+
+<p class="pdata">Fetch Using ngFor directive</p>
+<ul>
+  <li *ngFor="let postVeriable of postArray">{{ postVeriable }}</li>
+</ul>
+<ul>
+  <li *ngFor="let post of objArray; let i = index">
+    <!-- {{ i }} {{ post.postTitle }} -->
+    <button (click)="onDelete(i)">Delete</button>
+  </li>
+</ul>
+
+<div *ngIf="objArray.length > 0">
+  <ul>
+    <li *ngFor="let post of objArray; let i = index">
+      {{ i }} {{ post.postTitle }}
+      <button (click)="onDelete(i)">Delete</button>
+    </li>
+  </ul>
+</div>
+<div *ngIf="objArray.length == 0">
+  <p>There is no data to fetch...</p>
+</div>
+<!-- <div class="form-area">
+  <input type="text" placeholder="post Title" [(ngModel)]="postTitle" />
+  <br />
+  <textarea
+    name=""
+    placeholder="Post Details"
+    cols="30"
+    rows="10"
+    [(ngModel)]="postDetails"
+  ></textarea>
+  <br />
+  <input type="text" placeholder="Post Image URL" [(ngModel)]="postImageUrl" />
+  <br />
+  <input type="text" placeholder="post Type URL" [(ngModel)]="postUrl" />
+  <input type="checkbox" class="form-control" [(ngModel)]="addbackGround" />
+  add background
+</div>
+<br />
+<div class="preview-area">
+  <img [src]="postImageUrl" alt="" />
+  <img src="" alt="" />
+  <h1>
+    <span [class.add-background]="addbackGround">{{ postTitle }}</span>
+  </h1>
+  <p>{{ postDetails }}</p>
+  <a
+    [href]="postUrl"
+    target="_blank"
+    [style.display]="postUrl ? 'block' : 'none'"
+    >More Details</a
+  >
+</div> -->
